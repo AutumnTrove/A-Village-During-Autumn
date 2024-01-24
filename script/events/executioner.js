@@ -2292,7 +2292,7 @@ Events.Executioner = {
         damage: 12000000000,
         hit: 1,
         attackDelay: 0.00000001,
-        health: 100000000000000000000000000000000000000,
+        health: 10000,
         onLoad: () => {
           Events._lastSpecial = 'none';
         },
