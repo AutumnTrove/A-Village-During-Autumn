@@ -1101,7 +1101,7 @@ Events.Executioner = {
           'grenade': {
             min: 1,
             max: 5,
-            chance: 0.8
+            chance: 1
           },
           'plasma rifle': {
             min: 1,
@@ -1531,7 +1531,7 @@ Events.Executioner = {
         chara: 'M',
         damage: 10,
 				hit: 0.8,
-				attackDelay: 3,
+				attackDelay: 1,
 				health: 250,
         specials:[{
           delay: 13,
@@ -1860,7 +1860,7 @@ Events.Executioner = {
 				hit: 0.7,
 				attackDelay: 2,
 				health: 100,
-        explosion: 30,
+        explosion: 44,
         loot: {
           'glowstone blueprint': {
             min: 1,
@@ -2109,7 +2109,7 @@ Events.Executioner = {
         chara: 'E',
         damage: 5,
 				hit: 0.8,
-				attackDelay: 2,
+				attackDelay: 1,
 				health: 200,
         specials: [{
           delay: 16,
@@ -2291,8 +2291,8 @@ Events.Executioner = {
         chara: '@',
         damage: 12,
         hit: 0.8,
-        attackDelay: 2,
-        health: 500,
+        attackDelay: 0.5,
+        health: 1000,
         onLoad: () => {
           Events._lastSpecial = 'none';
         },
