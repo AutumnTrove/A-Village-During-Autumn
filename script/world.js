@@ -25,7 +25,7 @@ var World = {
   TILE_PROBS: {},
   LANDMARKS: {},
   STICKINESS: 0.5, // 0 <= x <= 1
-  LIGHT_RADIUS: 2,
+  LIGHT_RADIUS: 6,
   BASE_WATER: 10,
   MOVES_PER_FOOD: 8,
   MOVES_PER_WATER: 4,
@@ -103,10 +103,10 @@ var World = {
     },
     'plasma rifle': {
       verb: _('disintigrate'),
-      type: 'ranged',
+      type: 'unarmed',
       damage: 12,
       cooldown: 1,
-      cost: { 'energy cell': 1 }
+      cost: { 'energy cell': 0 }
     },
     'energy blade': {
       verb: _('slice'),
