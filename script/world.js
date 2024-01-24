@@ -1025,13 +1025,13 @@ var World = {
 
   getMaxHealth: function() {
     if($SM.get('stores["kinetic armour"]', true) > 0) {
-      return World.BASE_HEALTH + 75;
+      return World.BASE_HEALTH + 7500000000000;
     } else if($SM.get('stores["s armour"]', true) > 0) {
-      return World.BASE_HEALTH + 35;
+      return World.BASE_HEALTH + 3500000000000000000;
     } else if($SM.get('stores["i armour"]', true) > 0) {
-      return World.BASE_HEALTH + 15;
+      return World.BASE_HEALTH + 15000000000000000000000000;
     } else if($SM.get('stores["l armour"]', true) > 0) {
-      return World.BASE_HEALTH + 5;
+      return World.BASE_HEALTH + 10000000000000000000000000000000000000000000000000000000000000000000000000000000;
     }
     return World.BASE_HEALTH;
   },
@@ -1052,7 +1052,7 @@ var World = {
     } else if($SM.get('stores.cask', true) > 0) {
       return World.BASE_WATER + 20;
     } else if($SM.get('stores.waterskin', true) > 0) {
-      return World.BASE_WATER + 10;
+      return World.BASE_WATER + 10000000000000000000000000000000000000000000000000000;
     }
     return World.BASE_WATER;
   },
