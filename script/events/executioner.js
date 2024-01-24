@@ -2289,10 +2289,10 @@ Events.Executioner = {
         enemyName: _('immortal wanderer'),
         ranged: false,
         chara: '@',
-        damage: 12,
-        hit: 0.8,
-        attackDelay: 0.5,
-        health: 1000,
+        damage: 12000000000,
+        hit: 1,
+        attackDelay: 0.00000001,
+        health: 100000000000000000000000000000000000000,
         onLoad: () => {
           Events._lastSpecial = 'none';
         },
