@@ -13,7 +13,7 @@ var Room = {
 		'trap': {
 			name: _('trap'),
 			button: null,
-			maximum: 10,
+			maximum: 100000000,
 			availableMsg: _('builder says she can make traps to catch any creatures might still be alive out there'),
 			buildMsg: _('more traps to catch more creatures'),
 			maxMsg: _("more traps won't help now"),
@@ -43,7 +43,7 @@ var Room = {
 		'hut': {
 			name: _('hut'),
 			button: null,
-			maximum: 20,
+			maximum: 2000,
 			availableMsg: _("builder says there are more wanderers. says they'll work, too."),
 			buildMsg: _('builder puts up a hut, out in the forest. says word will get around.'),
 			maxMsg: _('no more room for huts.'),
