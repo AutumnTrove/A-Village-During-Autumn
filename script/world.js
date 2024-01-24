@@ -27,8 +27,8 @@ var World = {
   STICKINESS: 0.5, // 0 <= x <= 1
   LIGHT_RADIUS: 6,
   BASE_WATER: 10,
-  MOVES_PER_FOOD: 8,
-  MOVES_PER_WATER: 4,
+  MOVES_PER_FOOD: 2,
+  MOVES_PER_WATER: 1,
   DEATH_COOLDOWN: 12,
   FIGHT_CHANCE: 0.20,
   BASE_HEALTH: 10,
@@ -482,7 +482,7 @@ var World = {
     World.waterMove++;
     // Food
     var movesPerFood = World.MOVES_PER_FOOD;
-    movesPerFood *= $SM.hasPerk('slow metabolism') ? 2 : 1;
+    movesPerFood *= $SM.hasPerk('slow metabolism') ? 8 : 1;
     if(World.foodMove >= movesPerFood) {
       World.foodMove = 0;
       var num = Path.outfit['cured meat'];
@@ -512,7 +512,7 @@ var World = {
     }
     // Water
     var movesPerWater = World.MOVES_PER_WATER;
-    movesPerWater *= $SM.hasPerk('desert rat') ? 2 : 1;
+    movesPerWater *= $SM.hasPerk('desert rat') ? 8 : 1;
     if(World.waterMove >= movesPerWater) {
       World.waterMove = 0;
       var water = World.water;
@@ -649,7 +649,7 @@ var World = {
 
   lightMap: function(x, y, mask) {
     var r = World.LIGHT_RADIUS;
-    r *= $SM.hasPerk('scout') ? 2 : 1;
+    r *= $SM.hasPerk('scout') ? 3 : 1;
     World.uncoverMap(x, y, r, mask);
     return mask;
   },
@@ -1038,7 +1038,7 @@ var World = {
 
   getHitChance: function() {
     if($SM.hasPerk('precise')) {
-      return World.BASE_HIT_CHANCE + 0.1;
+      return World.BASE_HIT_CHANCE + 0.2;
     }
     return World.BASE_HIT_CHANCE;
   },
