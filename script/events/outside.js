@@ -80,7 +80,7 @@ Events.Outside = [
 				notification: _('a fire has started'),
 				blink: true,
 				onLoad: function() {
-					Outside.destroyHuts(1);
+					Outside.destroyHuts(Math.floor(Math.random() * $SM.get('game.buildings["hut"]', true)) + 1);
 				},
 				buttons: {
 					'mourn': {
@@ -273,7 +273,7 @@ Events.Outside = [
 				],
 				notification: _('troops storm the village'),
 				onLoad: function() {
-					var numKilled = Math.floor(Math.random() * 40) + 1;
+					var numKilled = Math.floor(Math.random() * 80) + 1;
 					Outside.killVillagers(numKilled);
 				},
 				reward: {
