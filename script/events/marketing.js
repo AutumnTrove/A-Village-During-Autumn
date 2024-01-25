@@ -22,7 +22,7 @@ Events.Marketing = [{
           onClick: () => {
             $SM.set('marketing.penrose', true);
           },
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+          link: 'https://www.youtube.com/watch?v=nc7A8magTng'
         },
         'ignore': {
           text: _('ignore it'),
