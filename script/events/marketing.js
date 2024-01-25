@@ -22,7 +22,7 @@ Events.Marketing = [{
           onClick: () => {
             $SM.set('marketing.penrose', true);
           },
-          link: 'https://penrose.doublespeakgames.com/?utm_source=adarkroom&utm_medium=crosspromote&utm_campaign=event'
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         },
         'ignore': {
           text: _('ignore it'),
